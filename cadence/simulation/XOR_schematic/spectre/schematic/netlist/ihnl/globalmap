@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+Design/XOR/extracted XOR
+Design/XOR_schematic/schematic XOR_schematic
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+fF fF
+pF pF
+$endparam

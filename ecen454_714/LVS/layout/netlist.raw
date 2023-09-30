@@ -1,0 +1,234 @@
+t 10 CLK input
+t 11 D input
+t 7 GND inputOutput
+t 8 Q output
+t 12 VDD inputOutput
+t 9 _CLK input
+
+n 0 /13
+n 1 /12
+n 2 /11
+n 3 /10
+n 4 /9
+n 5 /8
+n 6 /7
+n 7 /GND
+n 8 /Q
+n 9 /_CLK
+n 10 /CLK
+n 11 /D
+n 12 /VDD
+
+; pmos4 Instance /+19 = auLvs device Q0
+d pmos D G S B (p D S)
+i 0 pmos 8 1 12 12 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /+18 = auLvs device Q1
+i 1 pmos 3 10 0 12 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /+17 = auLvs device Q2
+i 2 pmos 0 1 12 12 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /+16 = auLvs device Q3
+i 3 pmos 1 3 12 12 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /+15 = auLvs device Q4
+i 4 pmos 5 9 2 12 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /+14 = auLvs device Q5
+i 5 pmos 2 4 12 12 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /+13 = auLvs device Q6
+i 6 pmos 3 9 4 12 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /+12 = auLvs device Q7
+i 7 pmos 4 5 12 12 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /+11 = auLvs device Q8
+i 8 pmos 5 10 6 12 " m 1 l 200e-9 w 300e-9 "
+
+; pmos4 Instance /+10 = auLvs device Q9
+i 9 pmos 6 11 12 12 " m 1 l 200e-9 w 300e-9 "
+
+; pcapacitor Instance /+69 = auLvs device C10
+d pcapacitor PLUS MINUS (p PLUS MINUS)
+i 10 pcapacitor 7 1 " c 290.03e-18 "
+
+; pcapacitor Instance /+68 = auLvs device C11
+i 11 pcapacitor 7 3 " c 174.6e-18 "
+
+; pcapacitor Instance /+67 = auLvs device C12
+i 12 pcapacitor 7 4 " c 137.74e-18 "
+
+; pcapacitor Instance /+66 = auLvs device C13
+i 13 pcapacitor 7 5 " c 137.74e-18 "
+
+; pcapacitor Instance /+65 = auLvs device C14
+i 14 pcapacitor 9 7 " c 485e-18 "
+
+; pcapacitor Instance /+64 = auLvs device C15
+i 15 pcapacitor 10 7 " c 254.14e-18 "
+
+; pcapacitor Instance /+63 = auLvs device C16
+i 16 pcapacitor 11 7 " c 142.59e-18 "
+
+; pcapacitor Instance /+62 = auLvs device C17
+i 17 pcapacitor 12 1 " c 40.74e-18 "
+
+; pcapacitor Instance /+61 = auLvs device C18
+i 18 pcapacitor 12 3 " c 20.37e-18 "
+
+; pcapacitor Instance /+60 = auLvs device C19
+i 19 pcapacitor 12 4 " c 20.37e-18 "
+
+; pcapacitor Instance /+59 = auLvs device C20
+i 20 pcapacitor 12 5 " c 20.37e-18 "
+
+; pcapacitor Instance /+58 = auLvs device C21
+i 21 pcapacitor 12 9 " c 92.15e-18 "
+
+; pcapacitor Instance /+57 = auLvs device C22
+i 22 pcapacitor 12 10 " c 245.41e-18 "
+
+; pcapacitor Instance /+56 = auLvs device C23
+i 23 pcapacitor 12 11 " c 20.37e-18 "
+
+; pcapacitor Instance /+55 = auLvs device C24
+i 24 pcapacitor 7 0 " c 280.16e-18 "
+
+; pcapacitor Instance /+54 = auLvs device C25
+i 25 pcapacitor 7 1 " c 287.46e-18 "
+
+; pcapacitor Instance /+53 = auLvs device C26
+i 26 pcapacitor 7 2 " c 280.16e-18 "
+
+; pcapacitor Instance /+52 = auLvs device C27
+i 27 pcapacitor 7 3 " c 560.32e-18 "
+
+; pcapacitor Instance /+51 = auLvs device C28
+i 28 pcapacitor 7 4 " c 280.16e-18 "
+
+; pcapacitor Instance /+50 = auLvs device C29
+i 29 pcapacitor 7 5 " c 558.94e-18 "
+
+; pcapacitor Instance /+49 = auLvs device C30
+i 30 pcapacitor 7 6 " c 280.16e-18 "
+
+; pcapacitor Instance /+48 = auLvs device C31
+i 31 pcapacitor 8 7 " c 280.16e-18 "
+
+; pcapacitor Instance /+47 = auLvs device C32
+i 32 pcapacitor 9 5 " c 84.08e-18 "
+
+; pcapacitor Instance /+46 = auLvs device C33
+i 33 pcapacitor 9 7 " c 336.32e-18 "
+
+; pcapacitor Instance /+45 = auLvs device C34
+i 34 pcapacitor 10 5 " c 84.08e-18 "
+
+; pcapacitor Instance /+44 = auLvs device C35
+i 35 pcapacitor 10 7 " c 168.16e-18 "
+
+; pcapacitor Instance /+43 = auLvs device C36
+i 36 pcapacitor 12 0 " c 41.8e-18 "
+
+; pcapacitor Instance /+42 = auLvs device C37
+i 37 pcapacitor 12 1 " c 41.8e-18 "
+
+; pcapacitor Instance /+41 = auLvs device C38
+i 38 pcapacitor 12 2 " c 41.8e-18 "
+
+; pcapacitor Instance /+40 = auLvs device C39
+i 39 pcapacitor 12 3 " c 83.6e-18 "
+
+; pcapacitor Instance /+39 = auLvs device C40
+i 40 pcapacitor 12 4 " c 41.8e-18 "
+
+; pcapacitor Instance /+38 = auLvs device C41
+i 41 pcapacitor 12 5 " c 83.6e-18 "
+
+; pcapacitor Instance /+37 = auLvs device C42
+i 42 pcapacitor 12 6 " c 41.8e-18 "
+
+; pcapacitor Instance /+36 = auLvs device C43
+i 43 pcapacitor 12 8 " c 41.8e-18 "
+
+; pcapacitor Instance /+35 = auLvs device C44
+i 44 pcapacitor 12 9 " c 84.08e-18 "
+
+; pcapacitor Instance /+34 = auLvs device C45
+i 45 pcapacitor 12 10 " c 336.32e-18 "
+
+; pcapacitor Instance /+33 = auLvs device C46
+i 46 pcapacitor 1 0 " c 95e-18 "
+
+; pcapacitor Instance /+32 = auLvs device C47
+i 47 pcapacitor 3 0 " c 100.58e-18 "
+
+; pcapacitor Instance /+31 = auLvs device C48
+i 48 pcapacitor 3 1 " c 254.34e-18 "
+
+; pcapacitor Instance /+30 = auLvs device C49
+i 49 pcapacitor 3 2 " c 95e-18 "
+
+; pcapacitor Instance /+29 = auLvs device C50
+i 50 pcapacitor 4 3 " c 149.8e-18 "
+
+; pcapacitor Instance /+28 = auLvs device C51
+i 51 pcapacitor 5 2 " c 95e-18 "
+
+; pcapacitor Instance /+27 = auLvs device C52
+i 52 pcapacitor 5 3 " c 190e-18 "
+
+; pcapacitor Instance /+26 = auLvs device C53
+i 53 pcapacitor 5 4 " c 149.8e-18 "
+
+; pcapacitor Instance /+25 = auLvs device C54
+i 54 pcapacitor 7 1 " c 225e-18 "
+
+; pcapacitor Instance /+24 = auLvs device C55
+i 55 pcapacitor 7 3 " c 363.67e-18 "
+
+; pcapacitor Instance /+23 = auLvs device C56
+i 56 pcapacitor 7 4 " c 112.5e-18 "
+
+; pcapacitor Instance /+22 = auLvs device C57
+i 57 pcapacitor 7 5 " c 212.5e-18 "
+
+; pcapacitor Instance /+21 = auLvs device C58
+i 58 pcapacitor 9 3 " c 113.56e-18 "
+
+; pcapacitor Instance /+20 = auLvs device C59
+i 59 pcapacitor 9 5 " c 54.8e-18 "
+
+; nmos4 Instance /+9 = auLvs device Q60
+d nmos D G S B (p D S)
+i 60 nmos 8 1 7 7 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /+8 = auLvs device Q61
+i 61 nmos 3 9 0 7 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /+7 = auLvs device Q62
+i 62 nmos 0 1 7 7 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /+6 = auLvs device Q63
+i 63 nmos 1 3 7 7 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /+5 = auLvs device Q64
+i 64 nmos 5 10 2 7 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /+4 = auLvs device Q65
+i 65 nmos 2 4 7 7 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /+3 = auLvs device Q66
+i 66 nmos 3 10 4 7 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /+2 = auLvs device Q67
+i 67 nmos 4 5 7 7 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /+1 = auLvs device Q68
+i 68 nmos 5 9 6 7 " m 1 l 200e-9 w 300e-9 "
+
+; nmos4 Instance /+0 = auLvs device Q69
+i 69 nmos 6 11 7 7 " m 1 l 200e-9 w 300e-9 "
+

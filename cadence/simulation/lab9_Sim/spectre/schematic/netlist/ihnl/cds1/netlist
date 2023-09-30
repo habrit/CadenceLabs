@@ -1,0 +1,29 @@
+
+// Library name: Design
+// Cell name: lab9_Sim
+// View name: schematic
+I0 (A0 A1 A2 A3 B0 B1 B2 B3 Cin Cout 0 Sum0 Sum1 Sum2 Sum3 vdd!) lab9
+V16 (A0 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V15 (A1 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V14 (A2 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V13 (A3 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V12 (B0 0) vsource type=pulse dc=1.8 val0=1.8 val1=0 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V11 (B1 0) vsource type=pulse dc=1.8 val0=1.8 val1=0 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V10 (B2 0) vsource type=pulse dc=1.8 val0=1.8 val1=0 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V9 (B3 0) vsource type=pulse dc=1.8 val0=1.8 val1=0 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V8 (Cin 0) vsource type=pulse dc=1.8 val0=1.8 val1=0 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V2 (vdd! 0) vsource type=dc dc=1.8
+C4 (Cout 0) capacitor c=50f m=1
+C3 (Sum0 0) capacitor c=50f m=1
+C2 (Sum1 0) capacitor c=50f m=1
+C1 (Sum2 0) capacitor c=50f m=1
+C0 (Sum3 0) capacitor c=50f m=1

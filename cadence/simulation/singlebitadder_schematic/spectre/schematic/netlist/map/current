@@ -1,0 +1,21 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "singlebitadder_schematic"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/ugrads/h/hbritton/cadence/simulation/singlebitadder_schematic/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/singlebitadder_schematic/schematic" "singlebitadder_schematic" )
+( "Design/singlebitadder/extracted" "singlebitadder" )
+ )
+( "n" "_gpar0" )
+( "singlebitadder_schematic" "ihnl/cds1/map" )
+( "singlebitadder" "ihnl/cds0/map" )
+ )

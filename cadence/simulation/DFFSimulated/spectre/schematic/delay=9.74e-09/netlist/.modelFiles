@@ -1,0 +1,2 @@
+include "/home/ugrads/h/hbritton/cadence/models/spectre/tsmc20N.m"
+include "/home/ugrads/h/hbritton/cadence/models/spectre/tsmc20P.m"

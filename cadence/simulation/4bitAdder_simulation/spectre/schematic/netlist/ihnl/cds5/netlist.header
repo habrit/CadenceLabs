@@ -1,0 +1,5 @@
+
+// Library name: Design
+// Cell name: singlebitadder
+// View name: schematic
+subckt singlebitadder A B C Carry GND Sum VDD

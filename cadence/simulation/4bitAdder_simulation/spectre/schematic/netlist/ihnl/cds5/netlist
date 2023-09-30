@@ -1,0 +1,7 @@
+    I1 (net8 C GND VDD Sum) XOR
+    I0 (A B GND VDD net8) XOR
+    I4 (net14 net18 GND VDD Carry) NAND
+    I3 (A B GND VDD net18) NAND
+    I2 (net8 C GND VDD net14) NAND
+ends singlebitadder
+// End of subcircuit definition.

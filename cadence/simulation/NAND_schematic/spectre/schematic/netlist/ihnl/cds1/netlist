@@ -1,0 +1,11 @@
+
+// Library name: Design
+// Cell name: NAND_schematic
+// View name: schematic
+I3 (inA inB 0 vdd! out) NAND_extracted
+V0 (vdd! 0) vsource type=dc dc=1.8
+C0 (out 0) capacitor c=50f m=1
+V4 (inB 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V3 (inA 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=50n

@@ -1,0 +1,35 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "8bitAdder"
+  repList "behavioral functional system verilog pld_verilog lai_verilog lmsi_verilog schematic symbol"
+  stopList "verilog pld_verilog lai_verilog lmsi_verilog symbol"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/ugrads/h/hbritton/ecen454_714/8bitAdder_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "X" 7 0  "X" 7 0  )
+( "sum" 7 0  "sum" 7 0  )
+( "Y" 7 0  "Y" 7 0  )
+( "net11" 0 3  "net11" 0 3  )
+ )
+( model
+( "NCSU_Digital_Parts/DFF/schematic" "DFF" )
+( "Design/4bitRegister/schematic" "Design_4bitRegister_schematic" )
+( "Design/8bitAdder/schematic" "Design_8bitAdder_schematic" )
+( "Design/full_adder/schematic" "full_adder" )
+( "Design/4bitAdder/schematic" "Design_4bitAdder_schematic" )
+ )
+( "Design_8bitAdder_schematic" "ihnl/cds4/map" )
+( "Design_4bitAdder_schematic" "ihnl/cds1/map" )
+( "DFF" "ihnl/cds2/map" )
+( "Design_4bitRegister_schematic" "ihnl/cds3/map" )
+( "full_adder" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,10 @@
+    N1 (net14 B GND GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 \
+        ps=1.6u pd=1.6u m=1 region=sat
+    N0 (Y A net14 GND) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u \
+        pd=1.6u m=1 region=sat
+    P1 (Y B VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 ps=2.2u \
+        pd=2.2u m=1 region=sat
+    P0 (Y A VDD VDD) tsmc20P w=600n l=200n as=3e-13 ad=3e-13 ps=2.2u \
+        pd=2.2u m=1 region=sat
+ends NAND
+// End of subcircuit definition.

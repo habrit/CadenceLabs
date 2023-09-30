@@ -1,0 +1,7 @@
+xor2 I1 ( Sum, net11, C);
+xor2 I0 ( net11, A, B);
+nand2 I4 ( Carry, net18, net15);
+nand2 I3 ( net18, net11, C);
+nand2 I2 ( net15, A, B);
+
+endmodule

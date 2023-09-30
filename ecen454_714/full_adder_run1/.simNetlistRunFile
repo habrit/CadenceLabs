@@ -1,0 +1,11 @@
+simVerilogNetlistFileList = '(
+    (("Design" "full_adder") 
+	("cds0/netlist" "cds0/map" "schematic")
+    )
+)
+simVerilogNetlistFileLibList = '("Design")
+simVerilogNetlistFileCellList = '(("Design" 
+	("full_adder")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

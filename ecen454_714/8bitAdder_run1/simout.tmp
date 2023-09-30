@@ -1,0 +1,51 @@
+TOOL:	ncxlmode	15.20-s078: Started on Feb 08, 2023 at 13:21:53 CST
+ncxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	/home/ugrads/h/hbritton/ecen454_714/8bitAdder_run1/testfixture.template
+	-f /home/ugrads/h/hbritton/ecen454_714/8bitAdder_run1/verilog.inpfiles
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/inv/functional/verilog.v
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/Dlatch/behavioral/verilog.v
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/nand2/functional/verilog.v
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/xor2/functional/verilog.v
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+		ihnl/cds2/netlist
+		ihnl/cds3/netlist
+		ihnl/cds4/netlist
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /home/ugrads/h/hbritton/ecen454_714/8bitAdder_run1/.simTmpNCCmd "
+	+mpssession+virtuoso20972
+	+mpshost+n01-zeus.olympus.ece.tamu.edu
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /opt/coe/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+ncsim> probe -create -shm test  -all   -depth 1
+Created probe 1
+ncsim> run
+                   0 X=00000000, Y=00000000, Cin=0, Clock=0, Sum=000xxxxx, Cout=0
+                  50 X=00000000, Y=00000000, Cin=0, Clock=1, Sum=00000000, Cout=0
+                 100 X=01111110, Y=11100111, Cin=0, Clock=0, Sum=01010000, Cout=1
+                 150 X=01111110, Y=11100111, Cin=0, Clock=1, Sum=01100101, Cout=1
+                 200 X=11111111, Y=00000000, Cin=1, Clock=0, Sum=00000101, Cout=1
+                 250 X=11111111, Y=00000000, Cin=1, Clock=1, Sum=00000000, Cout=1
+                 300 X=10101010, Y=01010101, Cin=0, Clock=0, Sum=00000000, Cout=1
+                 350 X=10101010, Y=01010101, Cin=0, Clock=1, Sum=11111111, Cout=0
+                 400 X=10101010, Y=01010101, Cin=1, Clock=0, Sum=11111111, Cout=0
+                 450 X=10101010, Y=01010101, Cin=1, Clock=1, Sum=00000000, Cout=1
+                 500 X=11001100, Y=00110011, Cin=0, Clock=0, Sum=00000000, Cout=1
+                 550 X=11001100, Y=00110011, Cin=0, Clock=1, Sum=11111111, Cout=0
+                 600 X=11001100, Y=00110011, Cin=1, Clock=0, Sum=11111111, Cout=0
+                 650 X=11001100, Y=00110011, Cin=1, Clock=1, Sum=00000000, Cout=1
+ncsim> ^C
+ncsim> exit
+TOOL:	ncxlmode	15.20-s078: Exiting on Feb 08, 2023 at 13:25:13 CST  (total: 00:03:20)

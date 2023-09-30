@@ -1,0 +1,20 @@
+    P3 (out A net29 VDD) tsmc20P w=2u l=200n as=1e-12 ad=1e-12 ps=5u pd=5u \
+        m=1 region=sat
+    P2 (net29 net13 VDD VDD) tsmc20P w=2u l=200n as=1e-12 ad=1e-12 ps=5u \
+        pd=5u m=1 region=sat
+    P1 (out net22 net30 VDD) tsmc20P w=2u l=200n as=1e-12 ad=1e-12 ps=5u \
+        pd=5u m=1 region=sat
+    P0 (net30 B VDD VDD) tsmc20P w=2u l=200n as=1e-12 ad=1e-12 ps=5u pd=5u \
+        m=1 region=sat
+    N3 (net27 B GND GND) tsmc20N w=500n l=200n as=2.5e-13 ad=2.5e-13 ps=2u \
+        pd=2u m=1 region=sat
+    N2 (out A net27 GND) tsmc20N w=500n l=200n as=2.5e-13 ad=2.5e-13 ps=2u \
+        pd=2u m=1 region=sat
+    N1 (net28 net13 GND GND) tsmc20N w=500n l=200n as=2.5e-13 ad=2.5e-13 \
+        ps=2u pd=2u m=1 region=sat
+    N0 (out net22 net28 GND) tsmc20N w=500n l=200n as=2.5e-13 ad=2.5e-13 \
+        ps=2u pd=2u m=1 region=sat
+    I1 (GND VDD B net13) inverter
+    I0 (GND VDD A net22) inverter
+ends XOR
+// End of subcircuit definition.

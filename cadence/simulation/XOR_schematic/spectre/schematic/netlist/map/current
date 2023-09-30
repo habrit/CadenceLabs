@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "XOR_schematic"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ugrads/h/hbritton/cadence/simulation/XOR_schematic/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/XOR_schematic/schematic" "XOR_schematic" )
+( "Design/XOR/extracted" "XOR" )
+ )
+( "XOR_schematic" "ihnl/cds1/map" )
+( "XOR" "ihnl/cds0/map" )
+ )

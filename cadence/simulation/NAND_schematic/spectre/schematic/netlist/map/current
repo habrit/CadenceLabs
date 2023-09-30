@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "NAND_schematic"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ugrads/h/hbritton/cadence/simulation/NAND_schematic/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/NAND_schematic/schematic" "NAND_schematic" )
+( "Design/NAND/extracted" "NAND_extracted" )
+ )
+( "NAND_schematic" "ihnl/cds1/map" )
+( "NAND_extracted" "ihnl/cds2/map" )
+ )

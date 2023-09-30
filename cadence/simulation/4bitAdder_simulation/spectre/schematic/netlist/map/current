@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "4bitAdder_simulation"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ugrads/h/hbritton/cadence/simulation/4bitAdder_simulation/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/inverter/schematic" "inverter" )
+( "Design/4bitAdder_simulation/schematic" "Design_4bitAdder_simulation_schematic" )
+( "Design/XOR/schematic" "XOR" )
+( "Design/singlebitadder/schematic" "singlebitadder" )
+( "Design/NAND/schematic" "NAND" )
+( "Design/4bitAdder_schematic/schematic" "Design_4bitAdder_schematic_schematic" )
+ )
+( "NAND" "ihnl/cds4/map" )
+( "Design_4bitAdder_simulation_schematic" "ihnl/cds1/map" )
+( "Design_4bitAdder_schematic_schematic" "ihnl/cds6/map" )
+( "inverter" "ihnl/cds2/map" )
+( "XOR" "ihnl/cds3/map" )
+( "singlebitadder" "ihnl/cds5/map" )
+ )

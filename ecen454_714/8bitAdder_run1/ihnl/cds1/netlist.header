@@ -1,0 +1,23 @@
+// Library - Design, Cell - 4bitAdder, View - schematic
+// LAST TIME SAVED: Feb  7 22:04:16 2023
+// NETLIST TIME: Feb  8 12:47:50 2023
+`timescale 1ns / 1ns 
+
+module Design_4bitAdder_schematic ( Cout, Sum, A, B, Cin );
+
+output  Cout;
+
+input  Cin;
+
+output [3:0]  Sum;
+
+input [3:0]  B;
+input [3:0]  A;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "4bitAdder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

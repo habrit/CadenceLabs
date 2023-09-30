@@ -1,0 +1,19 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  Cout;
+
+reg  Cin;
+
+wire [3:0]  Sum;
+
+reg [3:0]  B;
+reg [3:0]  A;
+
+
+
+Design_4bitAdder_schematic top(Cout, Sum, A, B, Cin); 
+ 

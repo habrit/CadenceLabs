@@ -1,0 +1,12 @@
+CADENCE IHNL11140
+$model
+Design/lab9_Sim/schematic lab9_Sim
+Design/lab9/schematic lab9
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+f f
+$endparam

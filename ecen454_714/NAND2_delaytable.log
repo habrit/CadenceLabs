@@ -1,0 +1,195 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.421.isr9 32bit -- 17 Jul 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: hbritton   Host: n01-zeus.olympus.ece.tamu.edu   HostID: A8C00A02   PID: 35803
+Memory  available: 313.5770 GB  physical: 540.7710 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [2599.9] ( 20 ),  2 [2600.0] ( 22 ),  4 [1599.9] ( 24 )
+                 6 [2599.9] ( 26 ),  8 [2600.0] ( 28 ), 10 [1525.2] ( 30 )
+                12 [2600.0] ( 32 ), 14 [2599.9] ( 34 ), 16 [2600.0] ( 36 )
+                18 [2599.9] ( 38 )
+        1:       1 [2600.0] ( 21 ),  3 [2600.0] ( 23 ),  5 [2600.0] ( 25 )
+                 7 [2600.0] ( 27 ),  9 [2600.0] ( 29 ), 11 [1243.5] ( 31 )
+                13 [1200.0] ( 33 ), 15 [2599.9] ( 35 ), 17 [1206.4] ( 37 )
+                19 [2599.9] ( 39 )
+        
+System load averages (1min, 5min, 15min) : 37.0 %, 36.6 %, 36.0 %
+Hyperthreading is enabled
+Affinity is set by user to processors: 14 34 
+
+Simulating `NAND2_delaytable.spi' on n01-zeus.olympus.ece.tamu.edu at 10:09:34 PM, Tue Feb 21, 2023 (process id: 35803).
+Current working directory: /home/ugrads/h/hbritton/ecen454_714
+Command line:
+    /opt/coe/cadence/SPECTRE181/tools.lnx86/bin/spectre  \
+        NAND2_delaytable.spi
+
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/ugrads/h/hbritton/ecen454_714/NAND2_delaytable.spi
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/ugrads/h/hbritton/cadence/cellcharacs/model18.spi
+Reading file:  /home/ugrads/h/hbritton/cadence/cellcharacs/cell18.spi
+Time for NDB Parsing: CPU = 86.427 ms, elapsed = 148.599 ms.
+Time accumulated: CPU = 132.054 ms, elapsed = 148.606 ms.
+Peak resident memory used = 45.7 Mbytes.
+
+Time for Elaboration: CPU = 19.132 ms, elapsed = 19.8178 ms.
+Time accumulated: CPU = 151.397 ms, elapsed = 168.685 ms.
+Peak resident memory used = 50.6 Mbytes.
+
+
+Time for EDB Visiting: CPU = 877 us, elapsed = 884.056 us.
+Time accumulated: CPU = 152.474 ms, elapsed = 169.809 ms.
+Peak resident memory used = 51.2 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X1.M2: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 5
+            bsim3v3 4     
+          capacitor 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X1.M2: `Pdiblc2' = -8.75063e-06 is negative.
+
+Time for parsing: CPU = 9.626 ms, elapsed = 12.3401 ms.
+Time accumulated: CPU = 162.29 ms, elapsed = 182.388 ms.
+Peak resident memory used = 53.1 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*************************************************************
+Transient Analysis `TransientAnalysis': time = (0 s -> 10 ns)
+*************************************************************
+DC simulation time: CPU = 1.158 ms, elapsed = 581.026 us.
+
+Opening the PSF file NAND2_delaytable.raw/TransientAnalysis.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ns
+    step = 1 ps
+    maxstep = 200 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (voltage)
+
+...
+
+Notice from spectre at time = 255 ps during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node vpwl:p.
+
+.........
+
+Notice from spectre at time = 655 ps during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node vpwl:p.
+
+...................9...................8..................
+
+Notice from spectre at time = 3.09089 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node X1.internal.
+
+...................9...................8...................7..
+
+Notice from spectre at time = 3.29089 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node X1.internal.
+
+...................9...................8...................7......
+
+Notice from spectre at time = 3.49089 ns during transient analysis `TransientAnalysis'.
+    Found trapezoidal ringing on node X1.internal.
+        Further occurrences of this notice will be suppressed.
+
+...................9...................8...................7...................6...................5...................4...................3...................2...................1...................0
+Number of accepted tran steps =             99
+
+Notice from spectre during transient analysis `TransientAnalysis'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(IV_out) = 1.812 V
+I: I(vgnd:p) = 151 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 14 (52.9 %)     34 (57.9 %)     
+        Other    0 (5.3 %)       1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+                 4 (5.0 %)       5 (100.0 %)     6 (5.3 %)       7 (100.0 %)
+                 8 (100.0 %)     9 (100.0 %)    10 (15.8 %)     11 (4.8 %)
+                12 (100.0 %)    15 (5.6 %)      16 (100.0 %)    18 (5.3 %)
+                19 (5.6 %)      20 (100.0 %)    21 (9.5 %)      22 (14.3 %)
+                23 (5.0 %)      26 (100.0 %)    27 (5.9 %)      32 (15.8 %)
+                35 (100.0 %)    36 (10.0 %)     38 (100.0 %)    39 (100.0 %)
+Initial condition solution time: CPU = 1.494 ms, elapsed = 813.007 us.
+Intrinsic tran analysis time:    CPU = 52.356 ms, elapsed = 39.3291 ms.
+Total time required for tran analysis `TransientAnalysis': CPU = 65.162 ms, elapsed = 49.0601 ms.
+Time accumulated: CPU = 237.127 ms, elapsed = 240.48 ms.
+Peak resident memory used = 55.4 Mbytes.
+
+
+Notice from spectre.
+    25 notices suppressed.
+
+
+Aggregate audit (10:09:34 PM, Tue Feb 21, 2023):
+Time used: CPU = 242 ms, elapsed = 245 ms, util. = 98.7%.
+Time spent in licensing: elapsed = 24.1 ms, percentage of total = 9.86%.
+Peak memory used = 55.9 Mbytes.
+Simulation started at: 10:09:34 PM, Tue Feb 21, 2023, ended at: 10:09:34 PM, Tue Feb 21, 2023, with elapsed time (wall clock): 245 ms.
+spectre completes with 0 errors, 2 warnings, and 8 notices.

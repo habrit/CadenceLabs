@@ -1,0 +1,53 @@
+[03/29 22:39:51      0s] 
+[03/29 22:39:51      0s] Cadence Innovus(TM) Implementation System.
+[03/29 22:39:51      0s] Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/29 22:39:51      0s] 
+[03/29 22:39:51      0s] Version:	v18.10-p002_1, built Tue May 29 19:19:55 PDT 2018
+[03/29 22:39:51      0s] Options:	
+[03/29 22:39:51      0s] Date:		Wed Mar 29 22:39:51 2023
+[03/29 22:39:51      0s] Host:		n02-hera.olympus.ece.tamu.edu (x86_64 w/Linux 3.10.0-1160.80.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz 25600KB)
+[03/29 22:39:51      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/29 22:39:51      0s] 
+[03/29 22:39:51      0s] License:
+[03/29 22:39:51      0s] 		invs	Innovus Implementation System	18.1	checkout succeeded
+[03/29 22:39:51      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/29 22:40:09     14s] @(#)CDS: Innovus v18.10-p002_1 (64bit) 05/29/2018 19:19 (Linux 2.6.18-194.el5)
+[03/29 22:40:09     14s] @(#)CDS: NanoRoute 18.10-p002_1 NR180522-1057/18_10-UB (database version 2.30, 418.7.1) {superthreading v1.46}
+[03/29 22:40:09     14s] @(#)CDS: AAE 18.10-p004 (64bit) 05/29/2018 (Linux 2.6.18-194.el5)
+[03/29 22:40:09     14s] @(#)CDS: CTE 18.10-p003_1 () May 15 2018 10:23:07 ( )
+[03/29 22:40:09     14s] @(#)CDS: SYNTECH 18.10-a012_1 () Apr 19 2018 01:27:21 ( )
+[03/29 22:40:09     14s] @(#)CDS: CPE v18.10-p005
+[03/29 22:40:09     14s] @(#)CDS: IQRC/TQRC 18.1.1-s118 (64bit) Fri Mar 23 17:23:45 PDT 2018 (Linux 2.6.18-194.el5)
+[03/29 22:40:09     14s] @(#)CDS: OA 22.50-p083 Tue Jan  2 17:02:41 2018
+[03/29 22:40:09     14s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/29 22:40:09     14s] @(#)CDS: RCDB 11.13
+[03/29 22:40:09     14s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_17821_n02-hera.olympus.ece.tamu.edu_hbritton_XIVOMU.
+
+[03/29 22:40:09     14s] Change the soft stacksize limit to 0.2%RAM (1031 mbytes). Set global soft_stack_size_limit to change the value.
+[03/29 22:40:11     15s] 
+[03/29 22:40:11     15s] **INFO:  MMMC transition support version v31-84 
+[03/29 22:40:11     15s] 
+[03/29 22:40:11     15s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/29 22:40:11     15s] <CMD> suppressMessage ENCEXT-2799
+[03/29 22:40:11     15s] <CMD> win
+[03/29 22:45:06     43s] wrong # args: should be "set varName ?newValue?"
+[03/29 22:46:42     52s] In 14.* and later releases assign nets are handled natively in Innovus. 'set init_assign_buffer {1 -buffer }' will no longer convert assigns to buffers. 'set init_remove_assigns 1' can be used in addition to 'set init_assign_buffer {1 -buffer }' if this conversion is needed. Alternatively, 'remove_assigns' command can be used to remove assign nets in the design without adding buffers.
+[03/29 22:46:42     52s] **WARN: (IMPSYC-6163):	Command 'setDoAssign' is obsolete and will be made private and will be unsupported in future release. To avoid this warning, please remove the obsolete command from your script.
+[03/29 22:48:57     63s] **ERROR: (IMPSYT-16088):	Specify the name of Library Set.
+[03/29 22:49:28     65s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed Mar 29 22:49:28 2023
+  Total CPU time:     0:01:05
+  Total real time:    0:09:38
+  Peak memory (main): 496.01MB
+
+[03/29 22:49:28     65s] 
+[03/29 22:49:28     65s] *** Memory Usage v#1 (Current mem = 587.543M, initial mem = 251.492M) ***
+[03/29 22:49:28     65s] 
+[03/29 22:49:28     65s] *** Summary of all messages that are not suppressed in this session:
+[03/29 22:49:28     65s] Severity  ID               Count  Summary                                  
+[03/29 22:49:28     65s] ERROR     IMPSYT-16088         2  Specify the name of Library Set.         
+[03/29 22:49:28     65s] WARNING   IMPSYC-6163          1  Command '%s' is obsolete and will be mad...
+[03/29 22:49:28     65s] *** Message Summary: 1 warning(s), 2 error(s)
+[03/29 22:49:28     65s] 
+[03/29 22:49:28     65s] --- Ending "Innovus" (totcpu=0:01:06, real=0:09:37, mem=587.5M) ---

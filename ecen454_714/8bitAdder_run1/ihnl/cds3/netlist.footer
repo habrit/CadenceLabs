@@ -1,0 +1,7 @@
+DFF I3 ( Q[3], D[3], Clock, net4);
+DFF I4 ( Q[2], D[2], Clock, net4);
+DFF I1 ( Q[1], D[1], Clock, net4);
+DFF I0 ( Q[0], D[0], Clock, net4);
+inv I6 ( net4, Clock);
+
+endmodule

@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "DFFSimulated"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ugrads/h/hbritton/cadence/simulation/DFFSimulated/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/DFFSimulated/schematic" "DFFSimulated" )
+( "Design/DFF/extracted" "DFF" )
+ )
+( "DFFSimulated" "ihnl/cds1/map" )
+( "DFF" "ihnl/cds0/map" )
+ )

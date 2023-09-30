@@ -1,0 +1,28 @@
+// Library - Design, Cell - 4bitRegister, View - schematic
+// LAST TIME SAVED: Feb  8 12:47:27 2023
+// NETLIST TIME: Feb  8 12:47:50 2023
+`timescale 1ns / 1ns 
+
+module Design_4bitRegister_schematic ( Q, Clock, D );
+
+
+input  Clock;
+
+output [3:0]  Q;
+
+input [3:0]  D;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "4bitRegister";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+DFF I3 ( Q[3], D[3], Clock, net4);
+DFF I4 ( Q[2], D[2], Clock, net4);
+DFF I1 ( Q[1], D[1], Clock, net4);
+DFF I0 ( Q[0], D[0], Clock, net4);
+inv I6 ( net4, Clock);
+
+endmodule

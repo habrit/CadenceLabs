@@ -1,0 +1,243 @@
+[03/29 22:49:56      0s] 
+[03/29 22:49:56      0s] Cadence Innovus(TM) Implementation System.
+[03/29 22:49:56      0s] Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/29 22:49:56      0s] 
+[03/29 22:49:56      0s] Version:	v18.10-p002_1, built Tue May 29 19:19:55 PDT 2018
+[03/29 22:49:56      0s] Options:	
+[03/29 22:49:56      0s] Date:		Wed Mar 29 22:49:56 2023
+[03/29 22:49:56      0s] Host:		n02-hera.olympus.ece.tamu.edu (x86_64 w/Linux 3.10.0-1160.80.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz 25600KB)
+[03/29 22:49:56      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/29 22:49:56      0s] 
+[03/29 22:49:56      0s] License:
+[03/29 22:49:56      0s] 		invs	Innovus Implementation System	18.1	checkout succeeded
+[03/29 22:49:56      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/29 22:50:14     14s] @(#)CDS: Innovus v18.10-p002_1 (64bit) 05/29/2018 19:19 (Linux 2.6.18-194.el5)
+[03/29 22:50:14     14s] @(#)CDS: NanoRoute 18.10-p002_1 NR180522-1057/18_10-UB (database version 2.30, 418.7.1) {superthreading v1.46}
+[03/29 22:50:14     14s] @(#)CDS: AAE 18.10-p004 (64bit) 05/29/2018 (Linux 2.6.18-194.el5)
+[03/29 22:50:14     14s] @(#)CDS: CTE 18.10-p003_1 () May 15 2018 10:23:07 ( )
+[03/29 22:50:14     14s] @(#)CDS: SYNTECH 18.10-a012_1 () Apr 19 2018 01:27:21 ( )
+[03/29 22:50:14     14s] @(#)CDS: CPE v18.10-p005
+[03/29 22:50:14     14s] @(#)CDS: IQRC/TQRC 18.1.1-s118 (64bit) Fri Mar 23 17:23:45 PDT 2018 (Linux 2.6.18-194.el5)
+[03/29 22:50:14     14s] @(#)CDS: OA 22.50-p083 Tue Jan  2 17:02:41 2018
+[03/29 22:50:14     14s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/29 22:50:14     14s] @(#)CDS: RCDB 11.13
+[03/29 22:50:14     14s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_24567_n02-hera.olympus.ece.tamu.edu_hbritton_pts5XI.
+
+[03/29 22:50:14     14s] Change the soft stacksize limit to 0.2%RAM (1031 mbytes). Set global soft_stack_size_limit to change the value.
+[03/29 22:50:16     15s] 
+[03/29 22:50:16     15s] **INFO:  MMMC transition support version v31-84 
+[03/29 22:50:16     15s] 
+[03/29 22:50:16     15s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/29 22:50:16     15s] <CMD> suppressMessage ENCEXT-2799
+[03/29 22:50:16     15s] <CMD> win
+[03/29 22:50:52     17s] In 14.* and later releases assign nets are handled natively in Innovus. 'set init_assign_buffer {1 -buffer }' will no longer convert assigns to buffers. 'set init_remove_assigns 1' can be used in addition to 'set init_assign_buffer {1 -buffer }' if this conversion is needed. Alternatively, 'remove_assigns' command can be used to remove assign nets in the design without adding buffers.
+[03/29 22:50:52     17s] **WARN: (IMPSYC-6163):	Command 'setDoAssign' is obsolete and will be made private and will be unsupported in future release. To avoid this warning, please remove the obsolete command from your script.
+[03/29 22:53:25     30s] <CMD> set init_gnd_net {}
+[03/29 22:53:25     30s] <CMD> set init_pwr_net {gnd vdd}
+[03/29 22:53:25     30s] <CMD> init_design
+[03/29 22:53:25     30s] **WARN: (IMPSYC-6163):	Command 'setDoAssign' is obsolete and will be made private and will be unsupported in future release. To avoid this warning, please remove the obsolete command from your script.
+[03/29 22:53:25     30s] 
+[03/29 22:53:25     30s] Loading LEF file iit018_stdcells.lef ...
+[03/29 22:53:25     30s] **WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+[03/29 22:53:25     30s] so you are unable to create rectilinear partition in a hierarchical flow.
+[03/29 22:53:25     30s] Set DBUPerIGU to M2 pitch 800.
+[03/29 22:53:25     30s] 
+[03/29 22:53:25     30s] viaInitial starts at Wed Mar 29 22:53:25 2023
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN1 GENERATE.
+[03/29 22:53:25     30s] Type 'man IMPPP-557' for more detail.
+[03/29 22:53:25     30s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN2 GENERATE.
+[03/29 22:53:25     30s] Type 'man IMPPP-557' for more detail.
+[03/29 22:53:25     30s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN3 GENERATE.
+[03/29 22:53:25     30s] Type 'man IMPPP-557' for more detail.
+[03/29 22:53:25     30s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN4 GENERATE.
+[03/29 22:53:25     30s] Type 'man IMPPP-557' for more detail.
+[03/29 22:53:25     30s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN5 GENERATE.
+[03/29 22:53:25     30s] Type 'man IMPPP-557' for more detail.
+[03/29 22:53:25     30s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN6 GENERATE.
+[03/29 22:53:25     30s] Type 'man IMPPP-557' for more detail.
+[03/29 22:53:25     30s] viaInitial ends at Wed Mar 29 22:53:25 2023
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.52min, fe_real=3.48min, fe_mem=603.0M) ***
+[03/29 22:53:25     30s] **ERROR: (IMPSYT-16038):	The specified file 'cruise_ctrl_netlist.v' could not be found. Check your file system, correct the file name.
+[03/29 22:53:25     30s] **ERROR: (IMPIMEX-7008):	No netlist files are found.
+[03/29 22:53:41     32s] <CMD> set init_gnd_net {}
+[03/29 22:53:41     32s] <CMD> set init_verilog cruisecontrol_netlist.v
+[03/29 22:53:41     32s] <CMD> set init_pwr_net {gnd vdd}
+[03/29 22:53:41     32s] <CMD> init_design
+[03/29 22:53:41     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[03/29 22:53:41     32s] **WARN: (IMPSYC-6163):	Command 'setDoAssign' is obsolete and will be made private and will be unsupported in future release. To avoid this warning, please remove the obsolete command from your script.
+[03/29 22:53:41     32s] 
+[03/29 22:53:41     32s] Loading LEF file iit018_stdcells.lef ...
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'nwell' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'nactive' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'pactive' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'poly' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'cc' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'via' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'via2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'via3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'via4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'via5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-119' for more detail.
+[03/29 22:53:41     32s] **ERROR: (IMPLF-223):	The LEF via 'M2_M1' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+[03/29 22:53:41     32s] **ERROR: (IMPLF-223):	The LEF via 'M3_M2' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+[03/29 22:53:41     32s] **ERROR: (IMPLF-223):	The LEF via 'M4_M3' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+[03/29 22:53:41     32s] **ERROR: (IMPLF-223):	The LEF via 'M5_M4' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+[03/29 22:53:41     32s] **ERROR: (IMPLF-223):	The LEF via 'M6_M5' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+Type 'man IMPLF-223' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-151):	The viaRule 'viagen21' has been defined, the content will be skipped.
+[03/29 22:53:41     32s] **WARN: (IMPLF-151):	The viaRule 'viagen32' has been defined, the content will be skipped.
+[03/29 22:53:41     32s] **WARN: (IMPLF-151):	The viaRule 'viagen43' has been defined, the content will be skipped.
+[03/29 22:53:41     32s] **WARN: (IMPLF-151):	The viaRule 'viagen54' has been defined, the content will be skipped.
+[03/29 22:53:41     32s] **WARN: (IMPLF-151):	The viaRule 'viagen65' has been defined, the content will be skipped.
+[03/29 22:53:41     32s] **WARN: (IMPLF-151):	The viaRule 'TURN1' has been defined, the content will be skipped.
+[03/29 22:53:41     32s] **WARN: (IMPLF-151):	The viaRule 'TURN2' has been defined, the content will be skipped.
+[03/29 22:53:41     32s] **WARN: (IMPLF-151):	The viaRule 'TURN3' has been defined, the content will be skipped.
+[03/29 22:53:41     32s] **WARN: (IMPLF-151):	The viaRule 'TURN4' has been defined, the content will be skipped.
+[03/29 22:53:41     32s] **WARN: (IMPLF-151):	The viaRule 'TURN5' has been defined, the content will be skipped.
+[03/29 22:53:41     32s] **WARN: (IMPLF-151):	The viaRule 'TURN6' has been defined, the content will be skipped.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'FILL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'AND2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'AND2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'AOI21X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'AOI22X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'BUFX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'BUFX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'DFFNEGX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'NOR3X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'DFFPOSX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'FAX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'HAX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'INVX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'INVX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'INVX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'INVX8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'NAND2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'NAND3X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'NOR2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (IMPLF-58):	MACRO 'OAI21X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-58' for more detail.
+[03/29 22:53:41     32s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[03/29 22:53:41     32s] To increase the message display limit, refer to the product command reference manual.
+[03/29 22:53:41     32s] **WARN: (IMPLF-61):	33 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[03/29 22:53:41     32s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/29 22:53:41     32s] Type 'man IMPLF-61' for more detail.
+[03/29 22:53:41     32s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.54min, fe_real=3.75min, fe_mem=604.0M) ***
+[03/29 22:53:41     32s] #% Begin Load netlist data ... (date=03/29 22:53:41, mem=510.8M)
+[03/29 22:53:41     32s] *** Begin netlist parsing (mem=604.0M) ***
+[03/29 22:53:41     32s] Created 0 new cells from 0 timing libraries.
+[03/29 22:53:41     32s] Reading netlist ...
+[03/29 22:53:41     32s] Backslashed names will retain backslash and a trailing blank character.
+[03/29 22:53:41     32s] Reading verilog netlist 'cruisecontrol_netlist.v'
+[03/29 22:53:41     32s] 
+[03/29 22:53:41     32s] *** Memory Usage v#1 (Current mem = 606.027M, initial mem = 259.492M) ***
+[03/29 22:53:41     32s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=606.0M) ***
+[03/29 22:53:41     32s] #% End Load netlist data ... (date=03/29 22:53:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=514.2M, current mem=514.2M)
+[03/29 22:53:41     32s] **ERROR: (IMPSYC-300):	Cell cruisecontrol_netlist not found.
+**ERROR: (IMPVL-904):	Can't set top cell to "cruisecontrol_netlist" because it does not exist.  Exiting!
+[03/29 22:53:47     33s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed Mar 29 22:53:47 2023
+  Total CPU time:     0:00:33
+  Total real time:    0:03:52
+  Peak memory (main): 514.61MB
+
+[03/29 22:53:47     33s] 
+[03/29 22:53:47     33s] *** Memory Usage v#1 (Current mem = 607.027M, initial mem = 259.492M) ***
+[03/29 22:53:47     33s] 
+[03/29 22:53:47     33s] *** Summary of all messages that are not suppressed in this session:
+[03/29 22:53:47     33s] Severity  ID               Count  Summary                                  
+[03/29 22:53:47     33s] WARNING   IMPLF-151           11  The viaRule '%s' has been defined, the c...
+[03/29 22:53:47     33s] WARNING   IMPLF-58            33  MACRO '%s' has been found in the databas...
+[03/29 22:53:47     33s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[03/29 22:53:47     33s] ERROR     IMPLF-223            5  The LEF via '%s' has been defined and fo...
+[03/29 22:53:47     33s] WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+[03/29 22:53:47     33s] WARNING   IMPLF-119           16  LAYER '%s' has been found in the databas...
+[03/29 22:53:47     33s] ERROR     IMPSYT-16038         1  The specified file '%s' could not be fou...
+[03/29 22:53:47     33s] WARNING   IMPSYC-6163          3  Command '%s' is obsolete and will be mad...
+[03/29 22:53:47     33s] ERROR     IMPSYC-300           1  Cell %s not found.                       
+[03/29 22:53:47     33s] ERROR     IMPVL-904            2  Can't set top cell to "%s" because it do...
+[03/29 22:53:47     33s] WARNING   IMPPP-557            6  A single-layer VIARULE GENERATE for turn...
+[03/29 22:53:47     33s] ERROR     IMPIMEX-7008         1  No netlist files are found.              
+[03/29 22:53:47     33s] *** Message Summary: 71 warning(s), 10 error(s)
+[03/29 22:53:47     33s] 
+[03/29 22:53:47     33s] --- Ending "Innovus" (totcpu=0:00:33.3, real=0:03:51, mem=607.0M) ---

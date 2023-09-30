@@ -1,0 +1,6 @@
+    I3 (A\<3\> B\<3\> net12 Cout GND Sum\<3\> VDD) singlebitadder
+    I2 (A\<2\> B\<2\> net16 net12 GND Sum\<2\> VDD) singlebitadder
+    I1 (A\<1\> B\<1\> net21 net16 GND Sum\<1\> VDD) singlebitadder
+    I0 (A\<0\> B\<0\> Cin net21 GND Sum\<0\> VDD) singlebitadder
+ends Design_4bitAdder_schematic_schematic
+// End of subcircuit definition.

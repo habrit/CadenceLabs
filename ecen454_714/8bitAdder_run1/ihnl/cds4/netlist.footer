@@ -1,0 +1,7 @@
+Design_4bitAdder_schematic I1 ( Cout, sum[7:4], X[7:4], Y[7:4], net9);
+Design_4bitAdder_schematic I0 ( net7, net11[0:3], X[3:0], Y[3:0], Cin);
+Design_4bitRegister_schematic I2 ( sum[3:0], Clock, net11[0:3]);
+DFF I3 ( net9, net7, Clock, net8);
+inv I4 ( net8, Clock);
+
+endmodule

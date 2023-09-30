@@ -1,0 +1,31 @@
+
+// Library name: Design
+// Cell name: 4bitAdder_simulation
+// View name: schematic
+I0 (A\<3\> A\<2\> A\<1\> A\<0\> B\<3\> B\<2\> B\<1\> B\<0\> Cin Cout 0 \
+        Sum\<3\> Sum\<2\> Sum\<1\> Sum\<0\> vdd!) \
+        Design_4bitAdder_schematic_schematic
+V0 (vdd! 0) vsource type=dc dc=1.8
+V13 (A\<3\> 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=10n \
+        delay=3n rise=100p fall=100p width=5n
+V12 (A\<2\> 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=10n \
+        delay=3n rise=100p fall=100p width=5n
+V11 (A\<1\> 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=10n \
+        delay=3n rise=100p fall=100p width=5n
+V10 (A\<0\> 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=10n \
+        delay=3n rise=100p fall=100p width=5n
+V8 (B\<2\> 0) vsource type=pulse dc=1.8 val0=1.8 val1=0 period=10n \
+        delay=3n rise=100p fall=100p width=5n
+V6 (B\<1\> 0) vsource type=pulse dc=1.8 val0=1.8 val1=0 period=10n \
+        delay=3n rise=100p fall=100p width=5n
+V9 (B\<3\> 0) vsource type=pulse dc=1.8 val0=1.8 val1=0 period=10n \
+        delay=3n rise=100p fall=100p width=5n
+V7 (B\<0\> 0) vsource type=pulse dc=1.8 val0=1.8 val1=0 period=10n \
+        delay=3n rise=100p fall=100p width=5n
+V14 (Cin 0) vsource type=pulse dc=1.8 val0=1.8 val1=0 period=10n delay=3n \
+        rise=100p fall=100p width=5n
+C4 (Sum\<3\> 0) capacitor c=50f m=1
+C3 (Sum\<2\> 0) capacitor c=50f m=1
+C2 (Sum\<1\> 0) capacitor c=50f m=1
+C1 (Sum\<0\> 0) capacitor c=50f m=1
+C0 (Cout 0) capacitor c=50f m=1

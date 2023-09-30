@@ -1,0 +1,17 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 06/26/2020 22:02 (sjfhw830) $
+\o Sub version:		sub-version  s131 
+\o Arguments:		-mpssession virtuoso6995 -mpshost zach-127-22.engr.tamu.edu 
+\o Working Directory:	zach-127-22.engr.tamu.edu:/home/ugrads/h/hbritton/cadence/models/spectre
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o Log file is "/home/ugrads/h/hbritton/cadence/models/spectre/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(0 28 2560 1337))
+\o changeWorkingDir("/home/ugrads/h/hbritton/cadence/models/spectre") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a cdsLibManager->fileExitButton->value = t
+\o libManager is exiting.
+\a exit(0)

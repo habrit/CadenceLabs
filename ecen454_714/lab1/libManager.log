@@ -1,0 +1,18 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 06/26/2020 22:02 (sjfhw830) $
+\o Sub version:		sub-version  s131 
+\o Arguments:		-mpssession virtuoso7965 -mpshost n01-zeus.olympus.ece.tamu.edu 
+\o Working Directory:	n01-zeus.olympus.ece.tamu.edu:/home/ugrads/h/hbritton/ecen454_714/lab1
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o Log file is "/home/ugrads/h/hbritton/ecen454_714/lab1/libManager.log".
+\o Opening libManager window.
+\a nrResizeWindow(cdsLibManager list(2094 127 602 491))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1954 1254 602 491))
+\o changeWorkingDir("/home/ugrads/h/hbritton/ecen454_714/lab1") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

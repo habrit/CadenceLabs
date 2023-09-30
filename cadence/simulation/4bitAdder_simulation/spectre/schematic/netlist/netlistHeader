@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar  8 23:10:11 2023
+// Design library name: Design
+// Design cell name: 4bitAdder_simulation
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

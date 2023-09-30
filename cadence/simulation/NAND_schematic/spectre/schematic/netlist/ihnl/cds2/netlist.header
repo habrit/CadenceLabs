@@ -1,0 +1,6 @@
+
+// Library name: Design
+// Cell name: NAND
+// View name: extracted
+// View type: maskLayout
+subckt NAND_extracted A B GND VDD Y

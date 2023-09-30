@@ -1,0 +1,8 @@
+
+// Library name: Design
+// Cell name: 4bitAdder_schematic
+// View name: extracted
+// View type: maskLayout
+subckt Design_4bitAdder_schematic_extracted A\<3\> A\<2\> A\<1\> A\<0\> \
+        B\<3\> B\<2\> B\<1\> B\<0\> Cin Cout GND Sum\<3\> Sum\<2\> \
+        Sum\<1\> Sum\<0\> VDD

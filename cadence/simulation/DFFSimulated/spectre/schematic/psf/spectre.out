@@ -1,0 +1,1642 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.421.isr9 64bit -- 17 Jul 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: hbritton   Host: n01-zeus.olympus.ece.tamu.edu   HostID: A8C00A02   PID: 10254
+Memory  available: 129.3787 GB  physical: 540.7710 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1249.0] ( 20 ),  2 [1200.3] ( 22 ),  4 [1461.5] ( 24 )
+                 6 [1259.5] ( 26 ),  8 [2964.0] ( 28 ), 10 [1253.9] ( 30 )
+                12 [1226.1] ( 32 ), 14 [1207.0] ( 34 ), 16 [1281.7] ( 36 )
+                18 [1221.9] ( 38 )
+        1:       1 [2622.3] ( 21 ),  3 [1293.9] ( 23 ),  5 [2628.5] ( 25 )
+                 7 [1204.9] ( 27 ),  9 [1288.3] ( 29 ), 11 [2611.4] ( 31 )
+                13 [2628.2] ( 33 ), 15 [2601.1] ( 35 ), 17 [1795.3] ( 37 )
+                19 [1302.2] ( 39 )
+        
+System load averages (1min, 5min, 15min) : 11.5 %, 10.3 %, 8.3 %
+Hyperthreading is enabled
+Affinity is set by user to processors: 13 33 
+
+Simulating `input.scs' on n01-zeus.olympus.ece.tamu.edu at 1:00:34 PM, Thur Mar 23, 2023 (process id: 10254).
+Current working directory: /home/ugrads/h/hbritton/cadence/simulation/DFFSimulated/spectre/schematic/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=-E
+Command line:
+    /opt/coe/cadence/SPECTRE181/tools.lnx86/bin/spectre -64 input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre5_9419_27 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5 -env ade
+spectre pid = 10254
+
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /opt/coe/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/ugrads/h/hbritton/cadence/simulation/DFFSimulated/spectre/schematic/netlist/input.scs
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /opt/coe/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/include/stdc-predef.h
+Reading file:  /home/ugrads/h/hbritton/cadence/models/spectre/tsmc20N.m
+Reading file:  /home/ugrads/h/hbritton/cadence/models/spectre/tsmc20P.m
+Time for NDB Parsing: CPU = 100.628 ms, elapsed = 207.068 ms.
+Time accumulated: CPU = 144.694 ms, elapsed = 207.074 ms.
+Peak resident memory used = 60.9 Mbytes.
+
+Time for Elaboration: CPU = 23.195 ms, elapsed = 23.195 ms.
+Time accumulated: CPU = 168.112 ms, elapsed = 230.552 ms.
+Peak resident memory used = 68.3 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+
+
+Time for EDB Visiting: CPU = 1.872 ms, elapsed = 2.01201 ms.
+Time accumulated: CPU = 170.169 ms, elapsed = 232.747 ms.
+Peak resident memory used = 69.1 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): I0.+10: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+Global user options:
+         psfversion = 1.1.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 12
+            bsim3v3 20    
+          capacitor 1     
+            vsource 4     
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): I0.+10: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+
+Time for parsing: CPU = 13.709 ms, elapsed = 19.033 ms.
+Time accumulated: CPU = 184.109 ms, elapsed = 252.034 ms.
+Peak resident memory used = 71 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre5_9419_27, ).
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+DC simulation time: CPU = 1.714 ms, elapsed = 1.7159 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   12      (voltage)
+
+    tran: time = 754.8 ps    (2.52 %), step = 131.5 ps     (438 m%)
+    tran: time = 2.357 ns    (7.86 %), step = 369.4 ps     (1.23 %)
+
+Notice from spectre at time = 3.55699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 4.15699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 4.157 ns    (13.9 %), step = 600 ps          (2 %)
+
+Notice from spectre at time = 4.57849 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 5.254 ns    (17.5 %), step = 20.89 ps    (69.6 m%)
+
+Notice from spectre at time = 6.91104 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I0.13.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 6.911 ns      (23 %), step = 600 ps          (2 %)
+    tran: time = 8.711 ns      (29 %), step = 600 ps          (2 %)
+    tran: time = 9.752 ns    (32.5 %), step = 11.74 ps    (39.1 m%)
+    tran: time = 11.39 ns      (38 %), step = 256.8 ps     (856 m%)
+    tran: time = 12.97 ns    (43.2 %), step = 457.3 ps     (1.52 %)
+    tran: time = 14.58 ns    (48.6 %), step = 416.1 ps     (1.39 %)
+    tran: time = 15.95 ns    (53.2 %), step = 214.9 ps     (716 m%)
+    tran: time = 17.53 ns    (58.4 %), step = 600 ps          (2 %)
+    tran: time = 19.33 ns    (64.4 %), step = 600 ps          (2 %)
+    tran: time = 20.25 ns    (67.5 %), step = 5.23 ps     (17.4 m%)
+    tran: time = 21.75 ns    (72.5 %), step = 162.2 ps     (541 m%)
+    tran: time = 23.55 ns    (78.5 %), step = 600 ps          (2 %)
+    tran: time = 25 ns       (83.3 %), step = 426.7 ps     (1.42 %)
+    tran: time = 26.35 ns    (87.8 %), step = 387.7 ps     (1.29 %)
+    tran: time = 28.15 ns    (93.8 %), step = 600 ps          (2 %)
+    tran: time = 29.7 ns       (99 %), step = 476.2 ps     (1.59 %)
+Number of accepted tran steps =             367
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.8) = 2.01 V
+I: I(V0:p) = 262.9 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 13 (57.1 %)     33 (50.0 %)     
+        Other    5 (100.0 %)     7 (2.9 %)       8 (5.7 %)       9 (2.9 %)
+                15 (2.9 %)      17 (32.4 %)     18 (2.9 %)      21 (8.6 %)
+                28 (100.0 %)    31 (24.2 %)     35 (5.7 %)      36 (2.9 %)
+Initial condition solution time: CPU = 1.828 ms, elapsed = 1.83201 ms.
+Intrinsic tran analysis time:    CPU = 126.775 ms, elapsed = 131.081 ms.
+Total time required for tran analysis `tran': CPU = 140.258 ms, elapsed = 152.399 ms.
+Time accumulated: CPU = 361.312 ms, elapsed = 479.631 ms.
+Peak resident memory used = 74.4 Mbytes.
+
+
+Notice from spectre.
+    24 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+18: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.365 ms, elapsed = 1.36709 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   12      (voltage)
+
+    tran: time = 754.8 ps    (2.52 %), step = 131.5 ps     (438 m%)
+    tran: time = 2.357 ns    (7.86 %), step = 369.4 ps     (1.23 %)
+
+Notice from spectre at time = 3.55699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 4.15699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 4.157 ns    (13.9 %), step = 600 ps          (2 %)
+
+Notice from spectre at time = 4.57849 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 5.254 ns    (17.5 %), step = 20.89 ps    (69.6 m%)
+
+Notice from spectre at time = 6.91104 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I0.13.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 6.911 ns      (23 %), step = 600 ps          (2 %)
+    tran: time = 8.711 ns      (29 %), step = 600 ps          (2 %)
+    tran: time = 9.762 ns    (32.5 %), step = 11.75 ps    (39.2 m%)
+    tran: time = 11.32 ns    (37.7 %), step = 178 ps       (593 m%)
+    tran: time = 13.31 ns    (44.4 %), step = 559.2 ps     (1.86 %)
+    tran: time = 14.51 ns    (48.4 %), step = 600 ps          (2 %)
+    tran: time = 15.76 ns    (52.5 %), step = 157.3 ps     (524 m%)
+    tran: time = 17.62 ns    (58.7 %), step = 600 ps          (2 %)
+    tran: time = 18.82 ns    (62.7 %), step = 600 ps          (2 %)
+    tran: time = 20.26 ns    (67.5 %), step = 7.033 ps    (23.4 m%)
+    tran: time = 21.89 ns      (73 %), step = 205.8 ps     (686 m%)
+    tran: time = 23.85 ns    (79.5 %), step = 600 ps          (2 %)
+    tran: time = 25 ns       (83.3 %), step = 551.7 ps     (1.84 %)
+    tran: time = 26.48 ns    (88.3 %), step = 453.4 ps     (1.51 %)
+    tran: time = 28.28 ns    (94.3 %), step = 600 ps          (2 %)
+    tran: time = 29.3 ns     (97.7 %), step = 414 ps       (1.38 %)
+Number of accepted tran steps =             364
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.8) = 2.012 V
+I: I(V0:p) = 263.4 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 13 (23.9 %)     33 (23.4 %)     
+        Other    1 (3.6 %)       2 (1.4 %)       3 (1.4 %)       5 (100.0 %)
+                 8 (5.1 %)       9 (1.4 %)      11 (8.6 %)      12 (1.4 %)
+                15 (2.9 %)      17 (26.7 %)     19 (4.3 %)      21 (6.5 %)
+                28 (100.0 %)    29 (1.4 %)      31 (12.3 %)     35 (5.8 %)
+                36 (3.6 %)      
+Initial condition solution time: CPU = 1.431 ms, elapsed = 1.4329 ms.
+Intrinsic tran analysis time:    CPU = 49.961 ms, elapsed = 127.592 ms.
+Total time required for tran analysis `tran': CPU = 54.729 ms, elapsed = 147.801 ms.
+Time accumulated: CPU = 435.761 ms, elapsed = 1.52441 s.
+Peak resident memory used = 75.3 Mbytes.
+
+
+Notice from spectre.
+    21 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+18: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.32 ms, elapsed = 1.32203 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   12      (voltage)
+
+    tran: time = 754.8 ps    (2.52 %), step = 131.5 ps     (438 m%)
+    tran: time = 2.357 ns    (7.86 %), step = 369.4 ps     (1.23 %)
+
+Notice from spectre at time = 3.55699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 4.15699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 4.157 ns    (13.9 %), step = 600 ps          (2 %)
+
+Notice from spectre at time = 4.57849 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 5.254 ns    (17.5 %), step = 20.89 ps    (69.6 m%)
+
+Notice from spectre at time = 6.91104 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I0.13.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 6.911 ns      (23 %), step = 600 ps          (2 %)
+    tran: time = 8.711 ns      (29 %), step = 600 ps          (2 %)
+    tran: time = 9.758 ns    (32.5 %), step = 8.257 ps    (27.5 m%)
+    tran: time = 11.38 ns    (37.9 %), step = 248.4 ps     (828 m%)
+    tran: time = 12.93 ns    (43.1 %), step = 444.8 ps     (1.48 %)
+    tran: time = 14.57 ns    (48.6 %), step = 434.6 ps     (1.45 %)
+    tran: time = 15.96 ns    (53.2 %), step = 219.3 ps     (731 m%)
+    tran: time = 17.55 ns    (58.5 %), step = 600 ps          (2 %)
+    tran: time = 19.35 ns    (64.5 %), step = 600 ps          (2 %)
+    tran: time = 20.26 ns    (67.5 %), step = 12.32 ps    (41.1 m%)
+    tran: time = 21.76 ns    (72.5 %), step = 166.5 ps     (555 m%)
+    tran: time = 23.46 ns    (78.2 %), step = 600 ps          (2 %)
+    tran: time = 25 ns       (83.3 %), step = 470.5 ps     (1.57 %)
+    tran: time = 26.39 ns      (88 %), step = 409.7 ps     (1.37 %)
+    tran: time = 28.19 ns      (94 %), step = 600 ps          (2 %)
+    tran: time = 29.26 ns    (97.5 %), step = 463.2 ps     (1.54 %)
+Number of accepted tran steps =             362
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.8) = 2.011 V
+I: I(V0:p) = 262.9 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 13 (20.4 %)     33 (22.6 %)     
+        Other    1 (5.2 %)       3 (1.3 %)       5 (100.0 %)     7 (7.4 %)
+                 8 (5.2 %)       9 (2.2 %)      11 (14.3 %)     15 (2.6 %)
+                17 (22.4 %)     19 (3.9 %)      21 (4.8 %)      28 (100.0 %)
+                31 (7.8 %)      35 (7.8 %)      36 (3.9 %)      
+Initial condition solution time: CPU = 1.383 ms, elapsed = 1.38593 ms.
+Intrinsic tran analysis time:    CPU = 50.434 ms, elapsed = 84.384 ms.
+Total time required for tran analysis `tran': CPU = 55.364 ms, elapsed = 105.633 ms.
+Time accumulated: CPU = 510.395 ms, elapsed = 2.43005 s.
+Peak resident memory used = 75.7 Mbytes.
+
+
+Notice from spectre.
+    23 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+18: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.506 ms, elapsed = 1.508 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   12      (voltage)
+
+    tran: time = 754.8 ps    (2.52 %), step = 131.5 ps     (438 m%)
+    tran: time = 2.357 ns    (7.86 %), step = 369.4 ps     (1.23 %)
+
+Notice from spectre at time = 3.55699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 4.15699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 4.157 ns    (13.9 %), step = 600 ps          (2 %)
+
+Notice from spectre at time = 4.57849 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 5.254 ns    (17.5 %), step = 20.89 ps    (69.6 m%)
+
+Notice from spectre at time = 6.91104 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I0.13.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 6.911 ns      (23 %), step = 600 ps          (2 %)
+    tran: time = 8.711 ns      (29 %), step = 600 ps          (2 %)
+    tran: time = 9.76 ns     (32.5 %), step = 16.59 ps    (55.3 m%)
+    tran: time = 11.48 ns    (38.3 %), step = 234.8 ps     (783 m%)
+    tran: time = 13.21 ns      (44 %), step = 533 ps       (1.78 %)
+    tran: time = 14.41 ns      (48 %), step = 600 ps          (2 %)
+    tran: time = 15.83 ns    (52.8 %), step = 175.2 ps     (584 m%)
+    tran: time = 17.85 ns    (59.5 %), step = 600 ps          (2 %)
+    tran: time = 19.05 ns    (63.5 %), step = 600 ps          (2 %)
+    tran: time = 20.26 ns    (67.5 %), step = 14.62 ps    (48.7 m%)
+    tran: time = 21.95 ns    (73.2 %), step = 204.7 ps     (682 m%)
+    tran: time = 23.31 ns    (77.7 %), step = 600 ps          (2 %)
+    tran: time = 25 ns       (83.3 %), step = 488.2 ps     (1.63 %)
+    tran: time = 26.41 ns      (88 %), step = 419.6 ps      (1.4 %)
+    tran: time = 28.21 ns      (94 %), step = 600 ps          (2 %)
+    tran: time = 29.27 ns    (97.6 %), step = 457.9 ps     (1.53 %)
+Number of accepted tran steps =             362
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.8) = 2.011 V
+I: I(V0:p) = 263.7 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 13 (19.5 %)     33 (19.6 %)     
+        Other    1 (5.9 %)       3 (1.2 %)       5 (100.0 %)     7 (15.0 %)
+                 8 (5.3 %)       9 (2.2 %)      11 (18.6 %)     15 (2.5 %)
+                17 (15.8 %)     19 (2.8 %)      21 (4.0 %)      28 (100.0 %)
+                29 (1.5 %)      31 (5.6 %)      35 (6.8 %)      36 (4.4 %)
+Initial condition solution time: CPU = 1.586 ms, elapsed = 1.59001 ms.
+Intrinsic tran analysis time:    CPU = 56.615 ms, elapsed = 89.5159 ms.
+Total time required for tran analysis `tran': CPU = 62.183 ms, elapsed = 111.97 ms.
+Time accumulated: CPU = 592.343 ms, elapsed = 3.37003 s.
+Peak resident memory used = 76 Mbytes.
+
+
+Notice from spectre.
+    22 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+18: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.331 ms, elapsed = 1.333 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   12      (voltage)
+
+    tran: time = 754.8 ps    (2.52 %), step = 131.5 ps     (438 m%)
+    tran: time = 2.357 ns    (7.86 %), step = 369.4 ps     (1.23 %)
+
+Notice from spectre at time = 3.55699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 4.15699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 4.157 ns    (13.9 %), step = 600 ps          (2 %)
+
+Notice from spectre at time = 4.57849 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 5.254 ns    (17.5 %), step = 20.89 ps    (69.6 m%)
+
+Notice from spectre at time = 6.91104 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I0.13.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 6.911 ns      (23 %), step = 600 ps          (2 %)
+    tran: time = 8.711 ns      (29 %), step = 600 ps          (2 %)
+    tran: time = 9.753 ns    (32.5 %), step = 13.19 ps      (44 m%)
+    tran: time = 11.26 ns    (37.5 %), step = 183.8 ps     (613 m%)
+    tran: time = 13.21 ns      (44 %), step = 533.2 ps     (1.78 %)
+    tran: time = 14.41 ns      (48 %), step = 600 ps          (2 %)
+    tran: time = 15.83 ns    (52.8 %), step = 174.5 ps     (582 m%)
+    tran: time = 17.84 ns    (59.5 %), step = 600 ps          (2 %)
+    tran: time = 19.04 ns    (63.5 %), step = 600 ps          (2 %)
+    tran: time = 20.27 ns    (67.6 %), step = 20.37 ps    (67.9 m%)
+    tran: time = 22.09 ns    (73.6 %), step = 600 ps          (2 %)
+    tran: time = 23.29 ns    (77.6 %), step = 600 ps          (2 %)
+    tran: time = 25 ns       (83.3 %), step = 506.6 ps     (1.69 %)
+    tran: time = 26.27 ns    (87.6 %), step = 242.2 ps     (807 m%)
+    tran: time = 27.9 ns       (93 %), step = 600 ps          (2 %)
+    tran: time = 29.42 ns    (98.1 %), step = 322 ps       (1.07 %)
+Number of accepted tran steps =             362
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.10) = 2.011 V
+I: I(V0:p) = 263.7 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 13 (17.8 %)     33 (18.2 %)     
+        Other    1 (6.4 %)       3 (1.2 %)       5 (100.0 %)     7 (17.3 %)
+                 8 (5.4 %)       9 (2.1 %)      11 (28.9 %)     15 (2.4 %)
+                17 (12.1 %)     19 (2.1 %)      21 (3.7 %)      28 (100.0 %)
+                29 (1.2 %)      31 (4.2 %)      35 (6.8 %)      36 (4.3 %)
+Initial condition solution time: CPU = 1.414 ms, elapsed = 1.41692 ms.
+Intrinsic tran analysis time:    CPU = 51.199 ms, elapsed = 152.57 ms.
+Total time required for tran analysis `tran': CPU = 56.39 ms, elapsed = 173.856 ms.
+Time accumulated: CPU = 669.384 ms, elapsed = 4.39116 s.
+Peak resident memory used = 76.3 Mbytes.
+
+
+Notice from spectre.
+    24 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+18: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.32 ms, elapsed = 1.32108 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   12      (voltage)
+
+    tran: time = 754.8 ps    (2.52 %), step = 131.5 ps     (438 m%)
+    tran: time = 2.357 ns    (7.86 %), step = 369.4 ps     (1.23 %)
+
+Notice from spectre at time = 3.55699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 4.15699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 4.157 ns    (13.9 %), step = 600 ps          (2 %)
+
+Notice from spectre at time = 4.57849 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 5.254 ns    (17.5 %), step = 20.89 ps    (69.6 m%)
+
+Notice from spectre at time = 6.91104 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I0.13.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 6.911 ns      (23 %), step = 600 ps          (2 %)
+    tran: time = 8.711 ns      (29 %), step = 600 ps          (2 %)
+    tran: time = 9.75 ns     (32.5 %), step = 439 ps       (1.46 %)
+    tran: time = 11.32 ns    (37.7 %), step = 169.6 ps     (565 m%)
+    tran: time = 13.29 ns    (44.3 %), step = 554.3 ps     (1.85 %)
+    tran: time = 14.49 ns    (48.3 %), step = 600 ps          (2 %)
+    tran: time = 15.77 ns    (52.6 %), step = 158.5 ps     (528 m%)
+    tran: time = 17.63 ns    (58.8 %), step = 600 ps          (2 %)
+    tran: time = 18.83 ns    (62.8 %), step = 600 ps          (2 %)
+    tran: time = 20.27 ns    (67.6 %), step = 19.48 ps    (64.9 m%)
+    tran: time = 21.97 ns    (73.2 %), step = 600 ps          (2 %)
+    tran: time = 23.77 ns    (79.2 %), step = 600 ps          (2 %)
+    tran: time = 25 ns       (83.3 %), step = 312.9 ps     (1.04 %)
+    tran: time = 26.27 ns    (87.6 %), step = 242.9 ps     (810 m%)
+    tran: time = 27.9 ns       (93 %), step = 600 ps          (2 %)
+    tran: time = 29.42 ns    (98.1 %), step = 325.5 ps     (1.09 %)
+Number of accepted tran steps =             364
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.10) = 2.012 V
+I: I(V0:p) = 263.4 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 13 (17.2 %)     33 (17.3 %)     
+        Other    1 (6.6 %)       3 (1.5 %)       5 (100.0 %)     7 (19.4 %)
+                 8 (17.1 %)      9 (2.1 %)      10 (1.2 %)      11 (29.2 %)
+                15 (2.5 %)      17 (10.2 %)     19 (1.9 %)      21 (3.6 %)
+                28 (89.2 %)     29 (1.1 %)      31 (5.6 %)      35 (6.6 %)
+                36 (4.5 %)      
+Initial condition solution time: CPU = 1.39 ms, elapsed = 1.39284 ms.
+Intrinsic tran analysis time:    CPU = 57.747 ms, elapsed = 96.0269 ms.
+Total time required for tran analysis `tran': CPU = 63.103 ms, elapsed = 117.795 ms.
+Time accumulated: CPU = 751.345 ms, elapsed = 5.3436 s.
+Peak resident memory used = 76.6 Mbytes.
+
+
+Notice from spectre.
+    23 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+18: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.357 ms, elapsed = 1.35803 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   12      (voltage)
+
+    tran: time = 754.8 ps    (2.52 %), step = 131.5 ps     (438 m%)
+    tran: time = 2.357 ns    (7.86 %), step = 369.4 ps     (1.23 %)
+
+Notice from spectre at time = 3.55699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 4.15699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 4.157 ns    (13.9 %), step = 600 ps          (2 %)
+
+Notice from spectre at time = 4.57849 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 5.254 ns    (17.5 %), step = 20.89 ps    (69.6 m%)
+
+Notice from spectre at time = 6.91104 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I0.13.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 6.911 ns      (23 %), step = 600 ps          (2 %)
+    tran: time = 8.711 ns      (29 %), step = 600 ps          (2 %)
+    tran: time = 9.76 ns     (32.5 %), step = 449 ps        (1.5 %)
+    tran: time = 11.32 ns    (37.7 %), step = 178.4 ps     (595 m%)
+    tran: time = 13.31 ns    (44.4 %), step = 559.4 ps     (1.86 %)
+    tran: time = 14.51 ns    (48.4 %), step = 600 ps          (2 %)
+    tran: time = 15.76 ns    (52.5 %), step = 157.2 ps     (524 m%)
+    tran: time = 17.62 ns    (58.7 %), step = 600 ps          (2 %)
+    tran: time = 18.82 ns    (62.7 %), step = 600 ps          (2 %)
+    tran: time = 20.27 ns    (67.6 %), step = 23.39 ps      (78 m%)
+    tran: time = 22.13 ns    (73.8 %), step = 600 ps          (2 %)
+    tran: time = 23.33 ns    (77.8 %), step = 600 ps          (2 %)
+    tran: time = 25 ns       (83.3 %), step = 469 ps       (1.56 %)
+    tran: time = 26.28 ns    (87.6 %), step = 244.3 ps     (814 m%)
+    tran: time = 27.91 ns      (93 %), step = 600 ps          (2 %)
+    tran: time = 29.43 ns    (98.1 %), step = 326.9 ps     (1.09 %)
+Number of accepted tran steps =             360
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.10) = 2.012 V
+I: I(V0:p) = 263.4 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 13 (16.7 %)     33 (17.0 %)     
+        Other    1 (5.9 %)       3 (1.5 %)       5 (100.0 %)     7 (19.2 %)
+                 8 (23.3 %)      9 (2.6 %)      11 (26.4 %)     12 (1.1 %)
+                15 (3.9 %)      17 (9.3 %)      19 (2.1 %)      21 (4.2 %)
+                28 (83.9 %)     29 (1.3 %)      31 (5.0 %)      35 (6.7 %)
+                36 (4.4 %)      
+Initial condition solution time: CPU = 1.429 ms, elapsed = 1.43194 ms.
+Intrinsic tran analysis time:    CPU = 57.359 ms, elapsed = 94.6209 ms.
+Total time required for tran analysis `tran': CPU = 62.775 ms, elapsed = 116.489 ms.
+Time accumulated: CPU = 834.476 ms, elapsed = 6.28153 s.
+Peak resident memory used = 76.9 Mbytes.
+
+
+Notice from spectre.
+    21 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+18: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.292 ms, elapsed = 1.29294 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   12      (voltage)
+
+    tran: time = 754.8 ps    (2.52 %), step = 131.5 ps     (438 m%)
+    tran: time = 2.357 ns    (7.86 %), step = 369.4 ps     (1.23 %)
+
+Notice from spectre at time = 3.55699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 4.15699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 4.157 ns    (13.9 %), step = 600 ps          (2 %)
+
+Notice from spectre at time = 4.57849 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 5.254 ns    (17.5 %), step = 20.89 ps    (69.6 m%)
+
+Notice from spectre at time = 6.91104 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I0.13.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 6.911 ns      (23 %), step = 600 ps          (2 %)
+    tran: time = 8.711 ns      (29 %), step = 600 ps          (2 %)
+    tran: time = 9.77 ns     (32.6 %), step = 459 ps       (1.53 %)
+    tran: time = 11.27 ns    (37.6 %), step = 186.1 ps     (620 m%)
+    tran: time = 13.22 ns    (44.1 %), step = 534.8 ps     (1.78 %)
+    tran: time = 14.42 ns    (48.1 %), step = 600 ps          (2 %)
+    tran: time = 15.83 ns    (52.8 %), step = 173.9 ps     (580 m%)
+    tran: time = 17.83 ns    (59.4 %), step = 600 ps          (2 %)
+    tran: time = 19.03 ns    (63.4 %), step = 600 ps          (2 %)
+    tran: time = 20.26 ns    (67.5 %), step = 19.04 ps    (63.5 m%)
+    tran: time = 21.89 ns      (73 %), step = 600 ps          (2 %)
+    tran: time = 23.69 ns      (79 %), step = 600 ps          (2 %)
+    tran: time = 25 ns       (83.3 %), step = 352.5 ps     (1.18 %)
+    tran: time = 26.28 ns    (87.6 %), step = 244.9 ps     (816 m%)
+    tran: time = 27.91 ns      (93 %), step = 600 ps          (2 %)
+    tran: time = 29.44 ns    (98.1 %), step = 330.3 ps      (1.1 %)
+Number of accepted tran steps =             353
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.10) = 2.012 V
+I: I(V0:p) = 263.7 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 13 (16.1 %)     33 (16.4 %)     
+        Other    1 (6.1 %)       3 (2.1 %)       5 (100.0 %)     7 (16.6 %)
+                 8 (34.9 %)      9 (2.5 %)      11 (28.1 %)     12 (1.1 %)
+                15 (4.6 %)      17 (8.5 %)      19 (3.2 %)      21 (4.8 %)
+                23 (1.1 %)      28 (72.6 %)     29 (1.4 %)      31 (4.6 %)
+                35 (6.9 %)      36 (4.2 %)      
+Initial condition solution time: CPU = 1.369 ms, elapsed = 1.37091 ms.
+Intrinsic tran analysis time:    CPU = 51.793 ms, elapsed = 101.731 ms.
+Total time required for tran analysis `tran': CPU = 56.169 ms, elapsed = 136.481 ms.
+Time accumulated: CPU = 910.78 ms, elapsed = 7.39324 s.
+Peak resident memory used = 77.2 Mbytes.
+
+
+Notice from spectre.
+    24 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+18: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.331 ms, elapsed = 1.333 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   12      (voltage)
+
+    tran: time = 754.8 ps    (2.52 %), step = 131.5 ps     (438 m%)
+    tran: time = 2.357 ns    (7.86 %), step = 369.4 ps     (1.23 %)
+
+Notice from spectre at time = 3.55699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 4.15699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 4.157 ns    (13.9 %), step = 600 ps          (2 %)
+
+Notice from spectre at time = 4.57849 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 5.254 ns    (17.5 %), step = 20.89 ps    (69.6 m%)
+
+Notice from spectre at time = 6.91104 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I0.13.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 6.911 ns      (23 %), step = 600 ps          (2 %)
+    tran: time = 8.711 ns      (29 %), step = 600 ps          (2 %)
+    tran: time = 9.78 ns     (32.6 %), step = 469 ps       (1.56 %)
+    tran: time = 11.35 ns    (37.8 %), step = 225.7 ps     (752 m%)
+    tran: time = 12.83 ns    (42.8 %), step = 412.9 ps     (1.38 %)
+    tran: time = 14.52 ns    (48.4 %), step = 482.9 ps     (1.61 %)
+    tran: time = 15.76 ns    (52.5 %), step = 156.2 ps     (521 m%)
+    tran: time = 17.61 ns    (58.7 %), step = 600 ps          (2 %)
+    tran: time = 18.81 ns    (62.7 %), step = 600 ps          (2 %)
+    tran: time = 20.26 ns    (67.5 %), step = 19.44 ps    (64.8 m%)
+    tran: time = 22.14 ns    (73.8 %), step = 600 ps          (2 %)
+    tran: time = 23.34 ns    (77.8 %), step = 600 ps          (2 %)
+    tran: time = 25 ns       (83.3 %), step = 456.5 ps     (1.52 %)
+    tran: time = 26.28 ns    (87.6 %), step = 246.5 ps     (822 m%)
+    tran: time = 27.92 ns    (93.1 %), step = 600 ps          (2 %)
+    tran: time = 29.45 ns    (98.2 %), step = 331.2 ps      (1.1 %)
+Number of accepted tran steps =             348
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.10) = 2.012 V
+I: I(V0:p) = 262.4 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 13 (15.5 %)     33 (16.1 %)     
+        Other    1 (5.6 %)       3 (4.2 %)       5 (100.0 %)     7 (16.0 %)
+                 8 (42.5 %)      9 (2.6 %)      11 (26.2 %)     15 (4.2 %)
+                17 (7.7 %)      19 (3.0 %)      21 (5.2 %)      23 (1.1 %)
+                28 (65.5 %)     29 (1.2 %)      31 (4.9 %)      35 (6.7 %)
+                36 (4.1 %)      
+Initial condition solution time: CPU = 1.4 ms, elapsed = 1.40309 ms.
+Intrinsic tran analysis time:    CPU = 48.191 ms, elapsed = 84.789 ms.
+Total time required for tran analysis `tran': CPU = 53.31 ms, elapsed = 106.443 ms.
+Time accumulated: CPU = 983.293 ms, elapsed = 8.33039 s.
+Peak resident memory used = 77.6 Mbytes.
+
+
+Notice from spectre.
+    25 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+18: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.427 ms, elapsed = 1.42813 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   12      (voltage)
+
+    tran: time = 754.8 ps    (2.52 %), step = 131.5 ps     (438 m%)
+    tran: time = 2.357 ns    (7.86 %), step = 369.4 ps     (1.23 %)
+
+Notice from spectre at time = 3.55699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 4.15699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 4.157 ns    (13.9 %), step = 600 ps          (2 %)
+
+Notice from spectre at time = 4.57849 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 5.254 ns    (17.5 %), step = 20.89 ps    (69.6 m%)
+
+Notice from spectre at time = 6.91104 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I0.13.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 6.911 ns      (23 %), step = 600 ps          (2 %)
+    tran: time = 8.711 ns      (29 %), step = 600 ps          (2 %)
+    tran: time = 9.79 ns     (32.6 %), step = 479 ps        (1.6 %)
+    tran: time = 11.3 ns     (37.7 %), step = 199.3 ps     (664 m%)
+    tran: time = 13.28 ns    (44.3 %), step = 552.1 ps     (1.84 %)
+    tran: time = 14.48 ns    (48.3 %), step = 600 ps          (2 %)
+    tran: time = 15.77 ns    (52.6 %), step = 159.5 ps     (532 m%)
+    tran: time = 17.65 ns    (58.8 %), step = 600 ps          (2 %)
+    tran: time = 18.85 ns    (62.8 %), step = 600 ps          (2 %)
+    tran: time = 20.26 ns    (67.5 %), step = 18.99 ps    (63.3 m%)
+    tran: time = 22.17 ns    (73.9 %), step = 600 ps          (2 %)
+    tran: time = 23.37 ns    (77.9 %), step = 600 ps          (2 %)
+    tran: time = 25 ns       (83.3 %), step = 427.2 ps     (1.42 %)
+    tran: time = 26.27 ns    (87.6 %), step = 242.3 ps     (808 m%)
+    tran: time = 27.9 ns       (93 %), step = 600 ps          (2 %)
+    tran: time = 29.44 ns    (98.1 %), step = 347.2 ps     (1.16 %)
+Number of accepted tran steps =             343
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.10) = 2.012 V
+I: I(V0:p) = 263.5 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 13 (15.3 %)     33 (16.0 %)     
+        Other    0 (1.1 %)       1 (6.0 %)       3 (3.8 %)       5 (100.0 %)
+                 6 (1.1 %)       7 (17.0 %)      8 (48.0 %)      9 (2.6 %)
+                11 (26.5 %)     15 (4.0 %)      17 (7.2 %)      19 (2.9 %)
+                21 (4.9 %)      28 (60.1 %)     29 (1.1 %)      31 (4.5 %)
+                35 (6.8 %)      36 (4.1 %)      
+Initial condition solution time: CPU = 1.492 ms, elapsed = 1.49488 ms.
+Intrinsic tran analysis time:    CPU = 49.638 ms, elapsed = 82.9549 ms.
+Total time required for tran analysis `tran': CPU = 54.899 ms, elapsed = 104.293 ms.
+Time accumulated: CPU = 1.05835 s, elapsed = 9.2088 s.
+Peak resident memory used = 77.9 Mbytes.
+
+
+Notice from spectre.
+    22 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+    WARNING (CMI-2426): I0.+19: `Pdiblc2' = -8.75063e-06 is negative.
+    WARNING (CMI-2426): I0.+18: `Pdiblc2' = -8.75063e-06 is negative.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.385 ms, elapsed = 1.38807 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   12      (voltage)
+
+    tran: time = 754.8 ps    (2.52 %), step = 131.5 ps     (438 m%)
+    tran: time = 2.357 ns    (7.86 %), step = 369.4 ps     (1.23 %)
+
+Notice from spectre at time = 3.55699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 4.15699 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 4.157 ns    (13.9 %), step = 600 ps          (2 %)
+
+Notice from spectre at time = 4.57849 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+Notice from spectre at time = 5 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node V0:p.
+
+    tran: time = 5.254 ns    (17.5 %), step = 20.89 ps    (69.6 m%)
+
+Notice from spectre at time = 6.91104 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I0.13.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 6.911 ns      (23 %), step = 600 ps          (2 %)
+    tran: time = 8.711 ns      (29 %), step = 600 ps          (2 %)
+    tran: time = 9.8 ns      (32.7 %), step = 489 ps       (1.63 %)
+    tran: time = 11.32 ns    (37.7 %), step = 170.3 ps     (568 m%)
+    tran: time = 13.3 ns     (44.3 %), step = 554.7 ps     (1.85 %)
+    tran: time = 14.5 ns     (48.3 %), step = 600 ps          (2 %)
+    tran: time = 15.77 ns    (52.6 %), step = 158.2 ps     (527 m%)
+    tran: time = 17.63 ns    (58.8 %), step = 600 ps          (2 %)
+    tran: time = 18.83 ns    (62.8 %), step = 600 ps          (2 %)
+    tran: time = 20.26 ns    (67.5 %), step = 18.09 ps    (60.3 m%)
+    tran: time = 22.09 ns    (73.6 %), step = 600 ps          (2 %)
+    tran: time = 23.29 ns    (77.6 %), step = 600 ps          (2 %)
+    tran: time = 25 ns       (83.3 %), step = 511.8 ps     (1.71 %)
+    tran: time = 26.27 ns    (87.6 %), step = 242.3 ps     (808 m%)
+    tran: time = 27.9 ns       (93 %), step = 600 ps          (2 %)
+    tran: time = 29.45 ns    (98.2 %), step = 352 ps       (1.17 %)
+Number of accepted tran steps =             337
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I0.10) = 2.011 V
+I: I(V0:p) = 263.3 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre 13 (15.4 %)     33 (15.8 %)     
+        Other    0 (1.0 %)       1 (6.2 %)       3 (3.5 %)       5 (100.0 %)
+                 6 (1.1 %)       7 (18.6 %)      8 (52.9 %)      9 (2.4 %)
+                11 (27.2 %)     15 (3.8 %)      17 (6.9 %)      19 (2.7 %)
+                21 (4.5 %)      23 (1.1 %)      28 (55.4 %)     29 (1.0 %)
+                31 (4.7 %)      35 (6.8 %)      36 (4.3 %)      
+Initial condition solution time: CPU = 1.462 ms, elapsed = 1.46508 ms.
+Intrinsic tran analysis time:    CPU = 54.105 ms, elapsed = 92.627 ms.
+Total time required for tran analysis `tran': CPU = 59.423 ms, elapsed = 114.279 ms.
+Time accumulated: CPU = 1.13805 s, elapsed = 10.1509 s.
+Peak resident memory used = 78.2 Mbytes.
+
+
+Notice from spectre.
+    22 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Aggregate audit (1:00:51 PM, Thur Mar 23, 2023):
+Time used: CPU = 1.16 s, elapsed = 17.6 s, util. = 6.62%.
+Time spent in licensing: elapsed = 23.8 ms.
+Peak memory used = 78.9 Mbytes.
+Simulation started at: 1:00:34 PM, Thur Mar 23, 2023, ended at: 1:00:51 PM, Thur Mar 23, 2023, with elapsed time (wall clock): 17.6 s.
+spectre completes with 0 errors, 35 warnings, and 88 notices.

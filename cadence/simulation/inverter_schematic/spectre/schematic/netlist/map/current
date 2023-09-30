@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "inverter_schematic"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ugrads/h/hbritton/cadence/simulation/inverter_schematic/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/inverter/extracted" "inverter_extracted" )
+( "Design/inverter_schematic/schematic" "inverter_schematic" )
+ )
+( "inverter_extracted" "ihnl/cds2/map" )
+( "inverter_schematic" "ihnl/cds1/map" )
+ )

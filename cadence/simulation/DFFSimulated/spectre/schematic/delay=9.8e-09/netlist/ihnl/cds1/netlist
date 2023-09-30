@@ -1,0 +1,13 @@
+
+// Library name: Design
+// Cell name: DFFSimulated
+// View name: schematic
+I0 (CLK D 0 out vdd! _CLK) DFF
+V0 (vdd! 0) vsource type=dc dc=1.8
+V3 (CLK 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=10n delay=0 \
+        rise=100p fall=100p width=5n
+V2 (D 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=20n delay=delay \
+        rise=100p fall=100p width=10n
+V1 (_CLK 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=10n delay=5n \
+        rise=100p fall=100p width=5n
+C0 (out 0) capacitor c=85f m=1

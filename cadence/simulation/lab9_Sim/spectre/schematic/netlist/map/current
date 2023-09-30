@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "lab9_Sim"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ugrads/h/hbritton/cadence/simulation/lab9_Sim/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Design/lab9/schematic" "lab9" )
+( "Design/lab9_Sim/schematic" "lab9_Sim" )
+ )
+( "lab9_Sim" "ihnl/cds1/map" )
+( "lab9" "ihnl/cds0/map" )
+ )

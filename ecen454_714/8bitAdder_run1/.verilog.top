@@ -1,0 +1,23 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  Cout;
+
+reg  Cin, Clock;
+
+wire [7:0]  sum;
+
+reg [7:0]  Y;
+reg [7:0]  X;
+
+// Buses in the design
+
+wire  [0:3]  net11;
+
+
+
+Design_8bitAdder_schematic top(Cout, sum, Cin, Clock, X, Y); 
+ 

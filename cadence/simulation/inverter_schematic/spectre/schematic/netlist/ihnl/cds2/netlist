@@ -1,0 +1,6 @@
+    \+1 (out in VDD VDD) tsmc20P w=9e-07 l=2e-07 as=4.5e-13 ad=4.5e-13 \
+        ps=1.9e-06 pd=1.9e-06 m=1 region=sat
+    \+0 (out in GND GND) tsmc20N w=3e-07 l=2e-07 as=1.9e-13 ad=1.9e-13 \
+        ps=1.5e-06 pd=1.5e-06 m=1 region=sat
+ends inverter_extracted
+// End of subcircuit definition.

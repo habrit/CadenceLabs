@@ -1,0 +1,11 @@
+
+// Library name: Design
+// Cell name: XOR_schematic
+// View name: schematic
+I0 (inA inB 0 vdd! out) XOR
+C0 (out 0) capacitor c=50f m=1
+V2 (inB 0) vsource type=pulse dc=1.8 val0=0 val1=0 period=12n delay=3n \
+        rise=100p fall=100p width=10n
+V3 (inA 0) vsource type=pulse dc=1.8 val0=0 val1=1.8 period=12n delay=3n \
+        rise=100p fall=100p width=5n
+V1 (vdd! 0) vsource type=dc dc=1.8
